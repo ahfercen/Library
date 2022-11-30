@@ -27,14 +27,29 @@ function drawBooks(){
         const titleContainer = document.createElement("div");
         titleContainer.className = "title-author";
         bookContainer.appendChild(titleContainer);
+        const title = document.createElement("div");
+        title.textContent = Book.title;
+        titleContainer.appendChild(title);
+        const author = document.createElement("div");
+        author.textContent = Book.author;
+        titleContainer.appendChild(author);
 
         const coverContainer = document.createElement("div");
         coverContainer.className = "cover"
         bookContainer.appendChild(coverContainer);
+        const cover = document.createElement("img");
+        cover.src = "#";
+        coverContainer.appendChild(cover);
 
         const pagesContainer = document.createElement("div");
         pagesContainer.className = "pages-read";
         bookContainer.appendChild(pagesContainer);
+        const pages = document.createElement("div");
+        pages.textContent = Book.pages;
+        pagesContainer.appendChild(pages);
+        const read = document.createElement("div");
+        read.textContent = Book.read;
+        pagesContainer.appendChild(read);
 
         libraryContainer.appendChild(bookContainer);
     });
