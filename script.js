@@ -20,6 +20,10 @@ const libraryContainer = document.getElementById("Library");
 function drawBooks(){
     console.log("Start drawing books");
     console.log(myLibrary);
+
+    console.log(libraryContainer.removeChild());
+
+
 }
 
 
