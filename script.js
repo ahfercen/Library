@@ -21,10 +21,10 @@ const libraryContainer = document.getElementById("Library");
 
 
 //initial Book creation
-const book1 = new Book("Book1", "Author", 400, true);
-const book2 = new Book("Book2", "Author", 500, false);
-const book3 = new Book("Book3", "Author", 336, true);
-const book4 = new Book("Book4", "Author", 523, false);
-const book5 = new Book("Book5", "Author", 264, false);
-const book6 = new Book("Book6", "Author", 699, false);
-const book7 = new Book("Book7", "Author", 772, true);
+myLibrary.push(new Book("Book1", "Author", 400, true));
+myLibrary.push(new Book("Book2", "Author", 500, false));
+myLibrary.push(new Book("Book3", "Author", 336, true));
+myLibrary.push(new Book("Book4", "Author", 523, false));
+myLibrary.push(new Book("Book5", "Author", 264, false));
+myLibrary.push(new Book("Book6", "Author", 699, false));
+myLibrary.push(new Book("Book7", "Author", 772, true));
