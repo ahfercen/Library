@@ -18,12 +18,26 @@ function AddToLibrary(Book){
 //html code
 const libraryContainer = document.getElementById("Library");
 function drawBooks(){
-    console.log("Start drawing books");
-    console.log(myLibrary);
+    libraryContainer.textContent = "";
 
-    console.log(libraryContainer.removeChild());
+    myLibrary.forEach(Book => {
+        const bookContainer = (document.createElement("div"));
+        bookContainer.className = "book";
 
+        const titleContainer = document.createElement("div");
+        titleContainer.className = "title-author";
+        bookContainer.appendChild(titleContainer);
 
+        const coverContainer = document.createElement("div");
+        coverContainer.className = "cover"
+        bookContainer.appendChild(coverContainer);
+
+        const pagesContainer = document.createElement("div");
+        pagesContainer.className = "pages-read";
+        bookContainer.appendChild(pagesContainer);
+
+        libraryContainer.appendChild(bookContainer);
+    });
 }
 
 
