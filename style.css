@@ -9,7 +9,15 @@
     box-shadow: 0px 2px 2px black;
     margin-bottom: 10px;
 }
-
+.logo{
+    flex: 1;
+    border: 1px solid red;
+}
+.form-container{
+    display: grid;
+    flex: 6;
+    border: 1px solid blue;
+}
 
 .library{
     display: grid;
