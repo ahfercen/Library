@@ -92,9 +92,9 @@ form{
 .library{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit,425px);
+    grid-template-rows: repeat(auto-fit,minmax(400px,500px));
     gap: 10px;
-    background-color: rrgb(221, 209, 207);
+    background-color: rgb(221, 209, 207);
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -102,8 +102,9 @@ form{
 }
 .book{
     min-width: 250px;
-    min-height: 325px;
-    max-width: inherit;
+    min-height: 360px;
+    max-width: 400px;
+    max-height: 700px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -122,7 +123,6 @@ form{
 .book:hover .title{
     text-decoration: underline;
     font-size: 26px;
-
 }
 .title-author{
     flex:1;
@@ -167,6 +167,7 @@ form{
     width: 95%;
     height: 95%;
     border: none;
+    border-radius: 10px;
 }
 .pages-read{
     flex:1;
