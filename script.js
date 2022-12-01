@@ -16,6 +16,8 @@ function AddToLibrary(Book){
 
 
 //html code
+
+
 const libraryContainer = document.getElementById("Library");
 function drawBooks(){
     libraryContainer.textContent = "";
@@ -64,8 +66,10 @@ function drawBooks(){
 }
 
 addEventListener("submit", (evt) =>{
-    console.log(evt);
     evt.preventDefault();
+    const data = [...(new FormData(evt.target)).entries()];
+    myLibrary.push( new Book(data[0][1], data[1][1], data[2][1], data[3][1]));
+    drawBooks();
 });
 
 
