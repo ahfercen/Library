@@ -63,6 +63,11 @@ function drawBooks(){
     });
 }
 
+addEventListener("submit", (evt) =>{
+    console.log(evt);
+    evt.preventDefault();
+});
+
 
 //initial Book creation and driver
 myLibrary.push(new Book("Book1", "Author", 400, true));
