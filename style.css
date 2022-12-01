@@ -6,7 +6,11 @@
 .header{
     display: flex;
     grid-row: 1 / 2;
+    box-shadow: 0px 2px 2px black;
+    margin-bottom: 10px;
 }
+
+
 .library{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
