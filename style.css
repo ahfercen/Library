@@ -100,15 +100,22 @@ form{
     padding-bottom: 130px;
 }
 .book{
-    max-width: 250px;
-    max-height: 325px;
+    
     min-width: 250px;
     min-height: 325px;
+    max-height: inherit;
+    max-width: inherit;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     align-items: center;
     background-color: #2BAEA8;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 10px;
+    transition: box-shadow 0.4s;
+}
+.book:hover{
+    box-shadow: 0px 0px 6px black;
 }
 .title-author{
     flex:1;
@@ -119,8 +126,10 @@ form{
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
-    width: 100%;
     background-color: #2BAE66;
+   
+    box-sizing: border-box;
+    width: 100%;
 }
 .title{
     font-weight: 500;
