@@ -24,11 +24,22 @@
 .title-author{
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
     border-bottom:1px solid black;
+    box-shadow: 0px 1px 1px black;
     align-items: center;
 }
 .title{
+    font-weight: 500;
+    font-size: 20px;
 }
 .author{
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(73, 72, 72);
+}
+.author::before{
+    content: "by ";
+    font-style: normal;
+    font-weight: normal;
 }
