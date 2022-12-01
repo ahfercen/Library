@@ -17,6 +17,9 @@ function AddToLibrary(Book){
 
 //html code
 
+function randomImg(){
+    return Math.ceil(Math.random() * 10 );
+}
 
 const libraryContainer = document.getElementById("Library");
 function drawBooks(){
@@ -42,7 +45,7 @@ function drawBooks(){
         coverContainer.className = "cover"
         bookContainer.appendChild(coverContainer);
         const cover = document.createElement("img");
-        cover.src = "./assets/placeholder.png";
+        cover.src = `./assets/books/${randomImg()}.jpeg`;
         coverContainer.appendChild(cover);
 
         const pagesContainer = document.createElement("div");

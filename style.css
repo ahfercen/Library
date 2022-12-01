@@ -1,12 +1,12 @@
 body{
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(231, 224, 223);
+    background-color: rgb(221, 209, 207);
 }
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 50fr;
+    grid-template-rows: 350px 1fr;
     height: 100%;
 }
 .header{
@@ -92,30 +92,37 @@ form{
 .library{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit,375px);
+    grid-template-rows: repeat(auto-fit,425px);
     gap: 10px;
-    background-color: rgb(231, 224, 223);
+    background-color: rrgb(221, 209, 207);
     margin-top: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 130px;
 }
 .book{
-    
     min-width: 250px;
     min-height: 325px;
-    max-height: inherit;
     max-width: inherit;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     align-items: center;
     background-color: #2BAEA8;
-    box-shadow: 2px 2px 6px black;
+    box-shadow: 2px 2px 4px rgb(64, 63, 63);
     border-radius: 10px;
-    transition: box-shadow 0.4s;
+    transition: 
+        box-shadow 0.5s,
+        ;
 }
 .book:hover{
-    box-shadow: 0px 0px 6px black;
+    box-shadow: 0px 0px 9px rgb(58, 57, 57);
+}
+.book:hover .title{
+    text-decoration: underline;
+    font-size: 26px;
+
 }
 .title-author{
     flex:1;
@@ -127,13 +134,15 @@ form{
     justify-content: center;
     margin-bottom: 5px;
     background-color: #2BAE66;
-   
     box-sizing: border-box;
     width: 100%;
 }
 .title{
     font-weight: 500;
     font-size: 20px;
+    transition:
+        text-decoration 0.4s,
+        font-size 0.4s;
 }
 .author{
     font-size: 14px;
@@ -155,8 +164,8 @@ form{
     margin-bottom: 5px;
 }
 .cover img{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     border: none;
 }
 .pages-read{
