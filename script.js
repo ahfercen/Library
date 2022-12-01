@@ -40,7 +40,7 @@ function drawBooks(){
         coverContainer.className = "cover"
         bookContainer.appendChild(coverContainer);
         const cover = document.createElement("img");
-        cover.src = "#";
+        cover.src = "./assets/placeholder.png";
         coverContainer.appendChild(cover);
 
         const pagesContainer = document.createElement("div");
