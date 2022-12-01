@@ -19,4 +19,6 @@
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
     border: 1px solid black;
+    justify-content: center;
+    align-items: center;
 }
