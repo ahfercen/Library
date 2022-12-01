@@ -47,11 +47,15 @@ function drawBooks(){
         pagesContainer.className = "pages-read";
         bookContainer.appendChild(pagesContainer);
         const pages = document.createElement("div");
-        pages.textContent = Book.pages;
+        pages.textContent = Book.pages + " pages";
         pages.className = "pages"
         pagesContainer.appendChild(pages);
         const read = document.createElement("div");
-        read.textContent = Book.read;
+        if(Book.read == true ){
+            read.textContent = "Finished";
+        }else{
+            read.textContent = "Not Started";
+        }
         read.className = "read";
         pagesContainer.appendChild(read);
 
