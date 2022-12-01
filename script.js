@@ -29,9 +29,11 @@ function drawBooks(){
         bookContainer.appendChild(titleContainer);
         const title = document.createElement("div");
         title.textContent = Book.title;
+        title.className = "title";
         titleContainer.appendChild(title);
         const author = document.createElement("div");
         author.textContent = Book.author;
+        author.className = "author"
         titleContainer.appendChild(author);
 
         const coverContainer = document.createElement("div");
@@ -46,9 +48,11 @@ function drawBooks(){
         bookContainer.appendChild(pagesContainer);
         const pages = document.createElement("div");
         pages.textContent = Book.pages;
+        pages.className = "pages"
         pagesContainer.appendChild(pages);
         const read = document.createElement("div");
         read.textContent = Book.read;
+        read.className = "read";
         pagesContainer.appendChild(read);
 
         libraryContainer.appendChild(bookContainer);

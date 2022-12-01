@@ -11,5 +11,12 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 15px;
+    gap: 20px;
+}
+.book{
+    max-width: 225px;
+    min-height: 225px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    border: 1px solid black;
 }
