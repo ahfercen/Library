@@ -17,7 +17,6 @@ body{
 }
 .logo{
     flex: 1;
-    border: 1px solid red;
 }
 .logo img{
     height: 100%;
@@ -26,7 +25,6 @@ body{
 }
 .form-container{
     flex: 6;
-    border: 1px solid blue;
     display: flex;
     width: 100%;
 }
@@ -63,7 +61,7 @@ form{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 20px;
-    background-color: #FCF6F5FF;
+    background-color: rgb(231, 224, 223);
 }
 .book{
     max-width: 225px;
@@ -72,6 +70,7 @@ form{
     flex-direction: column;
     border: 1px solid black;
     align-items: center;
+    background-color: #2BAEA8;
 }
 .title-author{
     flex:1;
@@ -80,8 +79,10 @@ form{
     border-bottom:1px solid black;
     box-shadow: 0px 1px 1px black;
     align-items: center;
+    justify-content: center;
     margin-bottom: 5px;
     width: 100%;
+    background-color: #2BAE66;
 }
 .title{
     font-weight: 500;
