@@ -1,15 +1,43 @@
+
 //Book Code
 let myLibrary = [];
-
-function Book(title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info = function(){
-        return title + "by " + author + ", " + pages + " pages, " + ((read) ? "read.":"not read yet."); 
+class Book {
+    #title;
+    #author;
+    #pages;
+    #read;
+    constructor(title, author, pages, read){
+        this.#title = title;
+        this.#author = author;
+        this.#pages = pages;
+        this.#read = read;
+    }
+    info() {
+        return this.#title + "by " + this.#author + ", " + this.#pages + " pages, " + ((this.#read) ? "read.":"not read yet."); 
+    }
+    get title(){
+        return this.#title;
+    }
+    get author(){
+        return this.#author;
+    }
+    get pages(){
+        return this.#pages;
+    }
+    get read(){
+        return this.#read;
+    }
+    set title(title){
+        this.#title = title;
+    }
+    set author(author){
+        this.#author = author;
+    }
+    set read(read){
+        this.#read = read;
     }
 }
+
 function AddToLibrary(Book){
     myLibrary.push(Book);
 }
@@ -71,6 +99,7 @@ function drawBooks(){
 addEventListener("submit", (evt) =>{
     evt.preventDefault();
     const data = [...(new FormData(evt.target)).entries()];
+    console.log(data);
     myLibrary.push( new Book(data[0][1], data[1][1], data[2][1], data[3][1]));
     drawBooks();
 });
